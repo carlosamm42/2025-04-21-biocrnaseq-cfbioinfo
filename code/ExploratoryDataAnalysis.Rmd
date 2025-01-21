@@ -60,6 +60,11 @@ colData(se) |>
 
 ```
 
+Check coefficients
+```{r}
+resultsNames(dds)
+```
+
 Estimate size factors using Deseq2
 ```{r}
 dds <- DESeq2::DESeqDataSet(se, design = ~ sex + time)
